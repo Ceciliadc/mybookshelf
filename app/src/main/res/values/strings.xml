@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">MyBookShelf</string>
+    <string name="pref_previously_started">pref_previously_started</string>
+</resources>

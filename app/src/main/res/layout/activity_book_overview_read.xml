@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rel_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbarAlwaysDrawVerticalTrack="false"
+    tools:context="com.example.cecilia.mybookshelf.BookOverviewActivityRead">
+
+    <ProgressBar
+        android:id="@+id/progress_read"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/iconImg_read"
+        android:layout_alignEnd="@+id/iconImg_read"
+        android:layout_alignLeft="@+id/iconImg_read"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@+id/iconImg_read"
+        android:layout_alignStart="@+id/iconImg_read"
+        android:layout_marginTop="8dp" />
+
+    <ImageView
+        android:id="@+id/iconImg_read"
+        android:layout_width="120dp"
+        android:layout_height="117dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="8dp"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <TextView
+        android:id="@+id/titleTxt_read"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="3dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="8dp"
+        android:layout_toEndOf="@+id/progress_read"
+        android:layout_toRightOf="@+id/progress_read"
+        android:textColor="@android:color/black"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/yearTxt_read"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/titleTxt_read"
+        android:layout_marginBottom="3dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_toEndOf="@+id/progress_read"
+        android:layout_toRightOf="@+id/progress_read"
+        android:textColor="@android:color/black" />
+
+    <TextView
+        android:id="@+id/authorTxt_read"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/yearTxt_read"
+        android:layout_marginBottom="3dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_toEndOf="@+id/progress_read"
+        android:layout_toRightOf="@+id/progress_read"
+        android:textColor="@android:color/black"
+        android:textStyle="bold|italic" />
+
+    <TextView
+        android:id="@+id/pagesTxt_read"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/authorTxt_read"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_toEndOf="@+id/progress_read"
+        android:layout_toRightOf="@+id/progress_read"
+        android:textColor="@android:color/black" />
+
+    <TextView
+        android:id="@+id/ratingTxt_read"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/ratingBar_personal"
+        android:layout_alignLeft="@+id/progress_read"
+        android:layout_alignStart="@+id/progress_read"
+        android:layout_below="@+id/progress_read"
+        android:layout_toLeftOf="@+id/ratingBar_read"
+        android:layout_toStartOf="@+id/ratingBar_read"
+        android:gravity="center"
+        android:text="Average rating: "
+        android:textColor="@android:color/black"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/ratingTxt_personal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/notesTxt_read"
+        android:layout_alignLeft="@+id/ratingTxt_read"
+        android:layout_alignStart="@+id/ratingTxt_read"
+        android:layout_below="@+id/ratingTxt_read"
+        android:layout_toLeftOf="@+id/ratingBar_read"
+        android:layout_toStartOf="@+id/ratingBar_read"
+        android:gravity="center"
+        android:text="Your rating: "
+        android:textColor="@android:color/black"
+        android:textSize="15sp" />
+
+    <RatingBar
+        android:id="@+id/ratingBar_read"
+        android:layout_width="wrap_content"
+        android:layout_height="43dp"
+        android:layout_alignEnd="@+id/pagesTxt_read"
+        android:layout_alignRight="@+id/pagesTxt_read"
+        android:layout_below="@+id/progress_read"
+        android:isIndicator="true" />
+
+    <RatingBar
+        android:id="@+id/ratingBar_personal"
+        android:layout_width="wrap_content"
+        android:layout_height="43dp"
+        android:layout_alignEnd="@+id/ratingBar_read"
+        android:layout_alignRight="@+id/ratingBar_read"
+        android:layout_below="@+id/ratingBar_read"
+        android:layout_toRightOf="@+id/ratingTxt_read"
+        android:isIndicator="true" />
+
+    <TextView
+        android:id="@+id/aboutTxt_read"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_above="@+id/setDateEnd"
+        android:layout_alignEnd="@+id/notesTxt_read"
+        android:layout_alignLeft="@+id/progress_read"
+        android:layout_alignRight="@+id/notesTxt_read"
+        android:layout_alignStart="@+id/progress_read"
+        android:layout_below="@+id/notesTxt_read"
+        android:layout_marginBottom="3dp"
+        android:layout_marginTop="5dp"
+        android:maxLines="22"
+        android:scrollbars="vertical"
+        android:textColor="@android:color/background_dark"
+        android:textSize="17dp"
+        android:textStyle="italic" />
+
+    <TextView
+        android:id="@+id/notesTxt_read"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignEnd="@+id/ratingBar_personal"
+        android:layout_alignRight="@+id/ratingBar_personal"
+        android:layout_below="@+id/ratingBar_personal"
+        android:layout_marginLeft="3dp"
+        android:layout_toRightOf="@+id/imageView2"
+        android:clickable="true"
+        android:gravity="center_vertical"
+        android:hint="Add a comment"
+        android:lines="2"
+        android:maxLines="2"
+        android:textColor="@android:color/black"
+        android:textSize="18sp" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_above="@+id/aboutTxt_read"
+        android:layout_alignLeft="@+id/ratingTxt_read"
+        android:layout_alignStart="@+id/ratingTxt_read"
+        android:layout_alignTop="@+id/notesTxt_read"
+        app:srcCompat="@mipmap/add_notes" />
+
+    <TextView
+        android:id="@+id/setDateEnd"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignLeft="@+id/aboutTxt_read"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/aboutTxt_read"
+        android:layout_marginBottom="3dp"
+        android:background="?android:attr/colorControlHighlight"
+        android:gravity="center_vertical"
+        android:hint="When did you finish this book?"
+        android:textColor="@android:color/black"
+        android:textSize="18sp" />
+
+</RelativeLayout>

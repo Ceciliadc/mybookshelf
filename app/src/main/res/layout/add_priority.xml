@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="20dp"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/PickPriority"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        android:text="Pick a priority for this book:"
+        android:textColor="@android:color/background_dark"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/continue_priority"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/ButtonLow"
+        android:layout_marginEnd="10dp"
+        android:layout_marginLeft="26dp"
+        android:layout_marginTop="20dp"
+        android:text="Continue" />
+
+    <RadioButton
+        android:id="@+id/ButtonHigh"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/PickPriority"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="35dp"
+        android:text="High"
+        android:textSize="18sp" />
+
+    <RadioButton
+        android:id="@+id/ButtonMedium"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_alignStart="@+id/ButtonHigh"
+        android:layout_below="@+id/ButtonHigh"
+        android:text="Medium"
+        android:textSize="18sp" />
+
+    <RadioButton
+        android:id="@+id/ButtonLow"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/ButtonMedium"
+        android:layout_centerHorizontal="true"
+        android:text="Low"
+        android:textSize="18sp" />
+
+</RelativeLayout>
